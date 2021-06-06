@@ -1,0 +1,7 @@
+[1121/153843.557:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0105/091809.060:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0107/170340.864:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[0107/170340.900:ERROR:crash_report_database_win.cc(496)] failed to stat report
+[0107/170340.901:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\Happy\AppData\Local\Google\Chrome\User Data\Crashpad\reports\856d4b46-e3e9-40ea-8d58-550595dda679.dmp: The system cannot find the file specified. (0x2)
+[0107/170340.901:ERROR:filesystem_win.cc(116)] GetFileAttributes C:\Users\Happy\AppData\Local\Google\Chrome\User Data\Crashpad\reports\a7398bba-6f10-4831-96a1-f3d1ca82b7a6.dmp: The system cannot find the file specified. (0x2)
+[0107/170340.902:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

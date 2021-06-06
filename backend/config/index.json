@@ -1,0 +1,15 @@
+{"BONUS":{"max":25000,"min":2000,"percent":1},
+  "USERS":{"player":"1602594948425","superadmin":"1602594948413","supermaster" : "1602625789120",
+  "status":{"pending":"pending","block":"block"},"emailverify_url":"/emailverify","forgotpasswordverify_url":"/forgotpasswordverify/:","secret_key":"love","monthlimit":100000,"weeklimit":100000,"daylimit":100000},  
+  "sendy":{"api_key":"NnUWvWUjbxemiJZd67rG","url":"http://ses.igamez.ai/","list_id1":"W30XtomoN3763nGCmxx0hMuw","list_id2":"ovv892M4763qGOb7mDS8892yH34w","forgotemailverify":"forgotemailverify","error":{"1":"Already subscribed."}},  
+
+  "session":{"expiretime":1000},"gamesession":{"expiretime":900},"iplocation":{"key":"8AD321BB40","package":"WS24","url":"https://api.ip2location.com/v2/?"},
+  "SPORT" : { "TOKEN" : "YXUTzIMrDV4c1X09ow", "SPORTID" : "sportid" , "FINISHED" : "Finished" , "SUSPENDED" : "Suspended" , "LIVE" : "Live" , "NOTSTARTED" : "NotStarted" , "ALL" : "All" , "SPORTS" : "sports"},
+  "AMOUNT_TYPE" : { "BALANCE" : 1,
+    "BONUS" : 2
+  },
+  "WALLET_TYPE" : {
+    "DEPOSIT"  : 1,
+    "WITHDRWAL" : 2
+  }
+}

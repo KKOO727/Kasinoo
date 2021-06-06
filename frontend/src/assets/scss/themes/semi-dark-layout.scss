@@ -1,0 +1,297 @@
+// ================================================================================================
+// 	File Name: semi-dark-layout.scss
+// 	Description: SCSS file for semi dark layout.
+// 	----------------------------------------------------------------------------------------------
+// 	Item Name: Vuexy React Admin Template
+// 	Version: 1.0
+// 	Author: PIXINVENT
+// 	Author URL: http://www.themeforest.net/user/pixinvent
+// ================================================================================================
+
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+body {
+  &.semi-dark-layout {
+    /************ Main Menu **************/
+    .historyback{
+      color: #000;
+      svg{
+        stroke: #000;
+      }
+
+    }
+   
+    $matkabackground : $white;
+    $matkabackborder : #7367f0;
+
+    // satta
+    .satta{
+      font-family: 'Patrick Hand', cursive !important;
+      .bazarheader{
+        background-color:$gray-100;
+        color: #000;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        text-align: center;
+        border: 1px solid $matkabackborder;
+      }
+      .gameheader{
+        background-color: $matkabackborder;
+        color: #000 !important;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        text-align: center;
+      }
+      .gamebody{
+        color: #000;
+        div{
+          border: 1px solid $matkabackborder;
+          text-align: center;
+          padding:1rem 0rem;
+          cursor: pointer;
+        }
+      }
+      .bazarbody{
+        .bazaritem{
+          border: 2px solid $matkabackborder;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          color: #000;
+          height: 100%;
+          cursor: pointer;
+          text-align: center;
+          padding: 0.5rem 0;
+        }
+        .bazaritem:hover{
+          background-color: $matkabackborder;
+          color: #fff;
+        }
+      }
+
+      .satta-events-items{
+        border: 0.5px solid $matkabackborder !important;
+        cursor: pointer;
+        text-align: center;
+        padding: 5px;
+        color: #000;
+        margin: 3px 0px;
+        border-radius: 2px;
+        background-color:  $matkabackborder;
+       
+      }
+      .satta-events-items:hover{
+          border-color: #9b928a !important;
+          box-shadow: 0 8px 25px -8px rgba( $matkabackborder,1);
+          background: $matkabackground !important;
+      }
+      .satta-events-items-active{
+          background-color: $matkabackground !important;
+        
+      }
+    }
+    .result{
+      font-family: 'Patrick Hand', cursive !important;
+      .topic{
+        font-size: 1.2rem;
+        color: $gray-100;
+        span{
+          color: #000;
+          font-size: 1.5rem;
+        }
+
+      }
+      .gameheader{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        .gname{
+          background-color:  $matkabackborder;
+          padding: 1rem;
+          width: 50%;
+          border: 0.5px solid $matkabackborder !important;
+          color: #000;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      
+        .timer{
+          border: 0.5px solid $matkabackborder !important;
+          cursor: pointer;
+          color: #000;
+          font-size: 1rem;
+          padding: 1rem;
+          display: flex;
+          justify-content: space-between;
+        }
+        .timer:hover{
+          background-color:  $matkabackborder;
+        }
+        .timeractive{
+          background-color:  $matkabackborder;
+        }
+      }
+      .gamebody{
+        display: flex;
+        flex-wrap: wrap;
+        .betnode{
+          color: #000;
+          text-align: center;
+          border: 0.5px solid $matkabackborder !important;
+          padding :1rem 0rem;
+          width: 10%;
+          cursor: pointer;
+        }
+        .betnode:hover{
+          background-color:  $matkabackborder;
+          color: #fff;
+        }
+      }
+    }
+    
+    
+    // main menu
+    .main-menu {
+      background-color: $dark-card-color;
+      .shadow-bottom {
+        background: linear-gradient(
+          180deg,
+          #0f1642 44%,
+          rgba(15, 22, 66, 0.51) 73%,
+          rgba(44, 48, 60, 0)
+        );
+      }
+      &:not(.expanded) {
+        .navigation {
+          .sidebar-group-active {
+            a {
+              background-color: $content-dark-bg;
+            }
+          }
+        }
+      }
+      &.theme-dark {
+        .navbar-header {
+          .brand-text {
+            color: $gray-500 !important;
+          }
+          .modern-nav-toggle {
+            svg {
+              color: $gray-500 !important;
+            }
+          }
+        }
+        .navigation {
+          .nav-item {
+            &.active {
+              a {
+                background: linear-gradient(
+                  118deg,
+                  $gray-500,
+                  rgba($gray-500, 0.7)
+                );
+                box-shadow: 0 0 10px 1px rgba($gray-500, 0.7);
+              }
+            }
+            .menu-content {
+              li.active {
+                background: linear-gradient(
+                  118deg,
+                  $gray-500,
+                  rgba($gray-500, 0.7)
+                );
+                box-shadow: 0 0 10px 1px rgba($gray-500, 0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // main menu content
+    .main-menu-content {
+      .navigation-main {
+        background-color: $dark-card-color;
+        .nav-item {
+          svg {
+            color: $theme-dark-text-color;
+          }
+          // &.open {
+          //   a {
+          //     // background-color: $content-dark-bg;
+          //   }
+          // }
+          a:after,
+          a {
+            color: $theme-dark-text-color;
+          }
+          .menu-content {
+            background-color: $dark-card-color;
+            .active {
+              .menu-item {
+                color: $white;
+              }
+            }
+            // li {
+            //   &:not(.active) {
+            //     a {
+            //       background-color: $dark-card-color;
+            //     }
+            //   }
+            //   &.hover {
+            //     a,
+            //     svg {
+            //       color: $theme-dark-text-color;
+            //     }
+            //   }
+            // }
+          }
+        }
+        .active {
+          .menu-title,
+          svg {
+            color: $white;
+          }
+        }
+        .sidebar-group-active {
+          a {
+            // background: $dark-card-color;
+            border-radius: 4px;
+          }
+          .menu-content {
+            // background-color: $dark-card-color;
+            .active {
+              z-index: 1;
+              a {
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // menu collapsed active item color
+    &.menu-collapsed {
+      .main-menu:not(.expanded) {
+        .navigation-main {
+          li.active {
+            a {
+              background: $content-dark-bg !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
